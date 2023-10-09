@@ -27,7 +27,7 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 Puedes usar el endpoint POST /civising/serviciofirma para enviar una solicitud JSON.
 
 Ejemplo de Solicitud JSON
-
+```
 {
     "docname": "Documento de Prueba 1.pdf",
     "documento": "Documento en Base64",
@@ -40,3 +40,4 @@ Ejemplo de Solicitud JSON
     "Lista_emails": ["ramsesgiralald@gmail.com", "joaconavio10@gmail.com"],
     "url_callback": "https://www.jus.mendoza.gob.ar/test_firma"
 }
+```
