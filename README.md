@@ -13,16 +13,16 @@ Antes de ejecutar el microservicio, asegúrate de configurar las siguientes prop
 spring.datasource.url=jdbc:postgresql://localhost:5432/tu_basededatos
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_contraseña
-
+```
 ### Configuración del smtp(Gmail en este caso)
-
+```
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=tu_email@gmail.com
 spring.mail.password=tu_contraseña
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
-
+```
 ## Uso
 Puedes usar el endpoint POST /civising/serviciofirma para enviar una solicitud JSON.
 
