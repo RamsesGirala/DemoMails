@@ -17,9 +17,12 @@ import java.util.List;
 
 @RestController
 public class DocumentoController {
-    private static final String Mensaje_Exito = "Se envio el mail exitosamente y se persisitio la informacion";
-    private static final String Mensaje_Error_Mail = "Fallo el envio del correo electronico debido a: ";
-    private static final String Mensaje_Error_BD = "Fallo la persistencia de la operacion debido a: ";
+    @Value("${spring.mail.success.message}")
+    private String Mensaje_Exito;
+    @Value("${spring.mail.error.message}")
+    private String Mensaje_Error_Mail;
+    @Value("${spring.mail.error.bd.message}")
+    private String Mensaje_Error_BD;
     @Value("${spring.mail.subject}")
     private String subject;
     @Value("${spring.mail.message}")
